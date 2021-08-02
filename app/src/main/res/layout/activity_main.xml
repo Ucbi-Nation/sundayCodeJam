@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButtonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flutter"
+            app:icon="@drawable/ic_baseline_format_align_left_24"
+            style="@style/TogleButtonIcon"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="235dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TogleButtonIcon"
+            app:icon="@drawable/ic_baseline_format_align_justify_24"
+            android:text="Java"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="333dp" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/TogleButtonIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            app:icon="@drawable/ic_baseline_format_align_center_24"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="424dp" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/TogleButtonIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kotlin"
+            app:icon="@drawable/ic_baseline_format_align_right_24"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <Button
+        android:id="@+id/alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="showAlertDialog"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButtonGroup" />
+
+    <Button
+        android:id="@+id/clickme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:onClick="showclickme"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
